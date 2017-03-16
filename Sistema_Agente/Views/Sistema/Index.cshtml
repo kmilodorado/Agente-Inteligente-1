@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Escenario</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group" id="but">
+                                <a class="btn btn-success" onclick="botones('inicio')"> <i class="fa fa-hourglass-start"></i> Iniciar Evento</a>
+                            </div>
+                        </div>
+                    </div>
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th style="text-align:center">A</th>
+                                <th style="text-align:center">B</th>
+                                <th style="text-align:center">C</th>
+                                <th style="text-align:center">D</th>
+                                <th style="text-align:center">E</th>
+                                <th style="text-align:center">F</th>
+                                <th style="text-align:center">G</th>
+                                <th style="text-align:center">H</th>
+                                <th style="text-align:center">I</th>
+                                <th style="text-align:center">J</th>
+                            </tr>
+                        </thead>
+                        <tbody id="Tabl"></tbody>
+                    </table>
+
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+<script>
+    $(function () {
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>

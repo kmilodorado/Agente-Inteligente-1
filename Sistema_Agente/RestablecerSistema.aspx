@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RestablecerSistema.aspx.cs" Inherits="Sistema_Agente.RestablecerSistema" %>
